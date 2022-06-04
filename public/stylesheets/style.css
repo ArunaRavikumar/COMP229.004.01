@@ -1,18 +1,16 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 15px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url('/images/home.jpg');
+  text-align: center;
 }
 
-a {
-  color: #00B7FF;
-}
-body {
-  background-image: url('/images/home.jpg');
-  color: #FFFFFF;
-}
+
+
 html {
   position: relative;
   min-height: 100%;
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 nav {
   font-weight: bold;
