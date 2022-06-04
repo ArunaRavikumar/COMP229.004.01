@@ -24,8 +24,8 @@ router.get('/',function(req, res, next) {
   });
 });
 // get service page
-router.get('/', projects);
-function service(req, res, next) {
+/* GET home page. */
+router.get('/',function(req, res, next) {
   res.render('service', { 
     title: 'Aruna Portfolio',
     home: 'HOME',
@@ -34,5 +34,5 @@ function service(req, res, next) {
     service: 'SERVICE PAGE',
     contact:'CONTACT ME'
   });
-}
+});
 module.exports = router;

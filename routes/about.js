@@ -26,7 +26,7 @@ function projects(req, res, next) {
   });
 }
 // get service page
-router.get('/', projects);
+router.get('/', service);
 function service(req, res, next) {
   res.render('service', { 
     title: 'Aruna Portfolio',

@@ -39,7 +39,7 @@ function projects(req, res, next) {
 // get service page
 router.get('/', service);
 function service(req, res, next) {
-  res.render('service', { 
+  res.render('index', { 
     title: 'Aruna Portfolio',
     home: 'HOME',
     about: 'ABOUT ME',
