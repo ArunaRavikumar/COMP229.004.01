@@ -26,7 +26,7 @@ function about(req, res, next) {
 }
 // get projects page
 router.get('/', projects);
-function about(req, res, next) {
+function projects(req, res, next) {
   res.render('index', { 
     title: 'Aruna Portfolio',
     home: 'HOME',
