@@ -1,6 +1,6 @@
 {
   "name": "comp229004",
-  "version": "5.0.0",
+  "version": "5.0.2",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
@@ -31,5 +31,4 @@
     "url": "https://github.com/ArunaRavikumar/COMP229.004.01/issues"
   },
   "homepage": "https://github.com/ArunaRavikumar/COMP229.004.01#readme"
-
 }
