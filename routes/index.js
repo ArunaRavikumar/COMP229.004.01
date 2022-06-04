@@ -36,4 +36,16 @@ function projects(req, res, next) {
     contact:'CONTACT ME'
   });
 }
+// get service page
+router.get('/', service);
+function service(req, res, next) {
+  res.render('service', { 
+    title: 'Aruna Portfolio',
+    home: 'HOME',
+    about: 'ABOUT ME',
+    projects: 'PROJECTS',
+    service: 'SERVICE PAGE',
+    contact:'CONTACT ME'
+  });
+}
 module.exports = router;
