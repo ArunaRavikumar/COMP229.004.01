@@ -12,7 +12,7 @@ router.get('/',function(req, res, next) {
     contact:'CONTACT ME'
   });
 });
-/* GET home page. */
+/* GET about page. */
 router.get('/',function(req, res, next) {
   res.render('about', { 
     title: 'Aruna Portfolio',
@@ -24,7 +24,7 @@ router.get('/',function(req, res, next) {
   });
 });
 // get service page
-/* GET home page. */
+
 router.get('/',function(req, res, next) {
   res.render('service', { 
     title: 'Aruna Portfolio',
@@ -35,4 +35,15 @@ router.get('/',function(req, res, next) {
     contact:'CONTACT ME'
   });
 });
+router.get('/',function(req, res, next) {
+  res.render('contact', { 
+    title: 'Aruna Portfolio',
+    home: 'HOME',
+    about: 'ABOUT ME',
+    projects: 'PROJECTS',
+    service: 'SERVICE PAGE',
+    contact:'CONTACT ME'
+  });
+});
+
 module.exports = router;
