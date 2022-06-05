@@ -1,8 +1,16 @@
-<%- include('partials/header.ejs') %>
+<!-- contact page 
+ 
+Name: Aruna Ravi Kumar
+ID: 301243154
+Date: 06-04-2022
+-->
+
+
+<%- include('partials/header.ejs') %> <!-- partial file header connected-->
       <p class=" pagination justify-content-center" font-weight ="bold">
      
      <h1 class="text-white text-warning text-lg-center">Fill out the form to Contact Me:</h1><br><br>
-     <form action="/action_page.php" class="was-validated" >
+     <form method=POST" action="/action_page.php" class="was-validated" >
         <div class="form-group">
           <label class="text-white" for="fname">First Name:</label> <br>
           <input type="text"  id="fname"  name="fname" required>          
@@ -29,8 +37,8 @@
            
         </div>
         
-        <button type="submit" class="btn btn-primary ">Submit</button>
+        <button type="submit" name="submit_button" class="btn btn-primary" value="Add">Submit</button>
       </form>
 </p>
 
-<%- include('partials/footer.ejs') %>
+<%- include('partials/footer.ejs') %> <!-- partial file footer connected-->

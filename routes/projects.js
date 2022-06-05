@@ -1,3 +1,10 @@
+/* File name: Projects file 
+Name: Aruna Ravi Kumar
+ID: 301243154
+Date: 06-04-2022
+*/
+
+
 var express = require('express');
 var router = express.Router();
 
@@ -12,38 +19,6 @@ router.get('/',function(req, res, next) {
     contact:'CONTACT ME'
   });
 });
-/* GET about page. */
-router.get('/',function(req, res, next) {
-  res.render('about', { 
-    title: 'Aruna Portfolio',
-    home: 'HOME',
-    about: 'ABOUT ME',
-    projects: 'PROJECTS',
-    service: 'SERVICE PAGE',
-    contact:'CONTACT ME'
-  });
-});
-// get service page
 
-router.get('/',function(req, res, next) {
-  res.render('service', { 
-    title: 'Aruna Portfolio',
-    home: 'HOME',
-    about: 'ABOUT ME',
-    projects: 'PROJECTS',
-    service: 'SERVICE PAGE',
-    contact:'CONTACT ME'
-  });
-});
-router.get('/',function(req, res, next) {
-  res.render('contact', { 
-    title: 'Aruna Portfolio',
-    home: 'HOME',
-    about: 'ABOUT ME',
-    projects: 'PROJECTS',
-    service: 'SERVICE PAGE',
-    contact:'CONTACT ME'
-  });
-});
 
 module.exports = router;

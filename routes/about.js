@@ -1,3 +1,10 @@
+/* File name: About me file 
+Name: Aruna Ravi Kumar
+ID: 301243154
+Date: 06-04-2022
+*/
+
+
 var express = require('express');
 var router = express.Router();
 
@@ -13,28 +20,5 @@ router.get('/',function(req, res, next) {
   });
 });
 
-// get projects page
-router.get('/', projects);
-function projects(req, res, next) {
-  res.render('projects', { 
-    title: 'Aruna Portfolio',
-    home: 'HOME',
-    about: 'ABOUT ME',
-    projects: 'PROJECTS',
-    service: 'SERVICE PAGE',
-    contact:'CONTACT ME'
-  });
-}
-// get service page
-router.get('/', service);
-function service(req, res, next) {
-  res.render('service', { 
-    title: 'Aruna Portfolio',
-    home: 'HOME',
-    about: 'ABOUT ME',
-    projects: 'PROJECTS',
-    service: 'SERVICE PAGE',
-    contact:'CONTACT ME'
-  });
-}
+
 module.exports = router;
