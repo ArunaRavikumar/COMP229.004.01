@@ -1,31 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-   
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-     <link rel="stylesheet" href="/stylesheets/style.css" />
-  </head>  
-  <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">WebSiteName</a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li ><a href="/"><%= home %></a></li>
-          <li><a href="/about"><%= about %></a></li>
-          <li class="active"><a href="/projects"><%= projects %></a></li>
-          <li><a href="/service"><%= service %></a></li>
-          <li><a href="/contact"><%= contact %></a></li>
-        </ul>
-      </div>
-    </nav>
+<%- include('partials/header.ejs') %>
       <p class=" pagination justify-content-center" font-weight ="bold">
      <br>
      <br>
      <br>
-     <h1 class="text-white font-weight-bold text-lg-center">Projects:</h1><br><br>
+     <h1 class="text-white font-weight-bold text-lg-center"><u>Projects:</u></h1><br><br>
      <h1 class="text-white ">
       •	Developed a software system design for MedOnTheGo, an e-medical platform which can<br> be used forvirtual doctor appointments and online medicine delivery services<br>
       As a part of Study in previous semester.
@@ -39,11 +17,4 @@
            </h1><br>
 </p>
 
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  </body>
-</html>
+<%- include('partials/footer.ejs') %>
